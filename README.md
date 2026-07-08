@@ -1,6 +1,6 @@
 # Celestian Browser
 
-Navegador de desktop construido com **Electron** (Chromium + Node.js), com bloqueador de anuncios nativo, atualizacao automatica e build multiplataforma automatizado via GitHub Actions.
+Navegador de desktop construido com **Electron** (Chromium + Node.js), com bloqueador de anuncios nativo, atualização automatica e build multiplataforma automatizado via GitHub Actions.
 
 ---
 

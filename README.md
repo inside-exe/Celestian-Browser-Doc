@@ -2,6 +2,8 @@
 
 Navegador para desktop construído com **Electron** (Chromium + Node.js), com bloqueador de anúncios nativo, atualização automática e build multiplataforma automatizado via GitHub Actions.
 
+![Tela inicial do Celestian Browser](docs/screenshot-home.png)
+
 ---
 
 ## Visão geral da arquitetura
@@ -19,6 +21,8 @@ Cada aba não é uma janela separada: é uma **WebContentsView** anexada à jane
 ## Bloqueio de anúncios
 
 Utiliza o motor **`@cliqz/adblocker-electron`** (a mesma engine usada pelo Brave/Ghostery), em **duas camadas**:
+
+![Escudo Celestian com contador de anúncios e rastreadores bloqueados](docs/screenshot-adblock.png)
 
 ### 1. Bloqueio de rede
 
@@ -98,7 +102,7 @@ Automação via **GitHub Actions** (`.github/workflows/build-browser.yml`). Não
 Isso dispara um build em **três sistemas operacionais simultaneamente** (*matrix strategy*):
 
 | Sistema | Instalador gerado |
-|----------|-------------------|
+| --------------- | ---------------------- |
 | windows-latest | `.exe` (Windows) |
 | macos-14 | `.dmg` (macOS) |
 | ubuntu-latest | `.AppImage` / `.deb` |
